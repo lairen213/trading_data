@@ -5,7 +5,7 @@
 @section('content')
     <div class="container">
         <div class="row mt-5">
-            @if(!$data_week && !$data_day):
+            @if(!$data_week && !$data_day)
                 <div class="col-12">
                     <div class="alert alert-warning">
                         Слишком много запросов. Попробуйте позже...
