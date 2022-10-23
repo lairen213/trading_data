@@ -16,12 +16,14 @@ class ScriptsController extends Controller
         $curl = new Curl();
         $curl->setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36");
         $curl->setHeaders(['Content-Type' => 'application/json']);
-        try{
-            $data = (array) $curl->get('https://www.alphavantage.co/query?function=FX_WEEKLY&from_symbol=EUR&to_symbol=USD&apikey=9ZF1G7Z2T8BYZ5A5&outputsize=full');
-            $data = (array) $data['Time Series FX (Weekly)'];
-        }catch (Exception $ex){
+
+        $data = (array) $curl->get('https://www.alphavantage.co/query?function=FX_WEEKLY&from_symbol=EUR&to_symbol=USD&apikey=9ZF1G7Z2T8BYZ5A5&outputsize=full');
+        if(isset($data['Time Series FX (Weekly)'])) {
+            $data = (array)$data['Time Series FX (Weekly)'];
+        }else{
             return false;
         }
+
         $sum_percent = 0;
         while($date_to >= $date_from){
             if(array_key_exists($date_to, $data)){
@@ -58,10 +60,11 @@ class ScriptsController extends Controller
         $curl = new Curl();
         $curl->setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36");
         $curl->setHeaders(['Content-Type' => 'application/json']);
-        try{
-            $data = (array) $curl->get('https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=EUR&to_symbol=USD&apikey=9ZF1G7Z2T8BYZ5A5&outputsize=full');
+
+        $data = (array) $curl->get('https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=EUR&to_symbol=USD&apikey=9ZF1G7Z2T8BYZ5A5&outputsize=full');
+        if(isset($data['Time Series FX (Daily)'])){
             $data = (array) $data['Time Series FX (Daily)'];
-        }catch (Exception $ex){
+        }else{
             return false;
         }
         $sum_percent = 0;
