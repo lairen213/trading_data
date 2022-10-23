@@ -140,8 +140,9 @@
             let date_from_inp = $('#date_from_inp').val();
             let date_to_inp = $('#date_to_inp').val();
 
-            if(date_from_inp < date_to_inp){
-                alert('Дата ОТ не может быть позже даты ДО');
+            if(date_from_inp > date_to_inp){
+                swal("Congrats!", ", Your account is created!", "success");
+                $(this).prop('disabled', false);
             }else {
 
                 let url = removeURLParameter(window.location.href, 'date_to');
