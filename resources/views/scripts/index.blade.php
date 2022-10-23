@@ -141,8 +141,8 @@
             let date_to_inp = $('#date_to_inp').val();
 
             if(date_from_inp > date_to_inp){
-                swal("Congrats!", ", Your account is created!", "success");
-                $(this).prop('disabled', false);
+                swal('Дата ОТ не может быть позже даты ДО');
+                $(this).prop('disabled', true);
             }else {
 
                 let url = removeURLParameter(window.location.href, 'date_to');
