@@ -23,13 +23,10 @@
                         </div>
                         <div class="col-4">
                             <div class="form-floating">
-                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" disabled>
+                                <select class="form-select" id="pairSelect" disabled>
                                     <option selected>EUR/USD</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
                                 </select>
-                                <label for="floatingSelect">Торговая пара:</label>
+                                <label for="pairSelect">Торговая пара:</label>
                             </div>
                             <br>
                             <button class="btn btn-info float-end" id="btnStart">Анализ</button>
@@ -64,11 +61,11 @@
                 <table class="table table-bordered">
                     <thead>
                     <tr>
-                        <th scope="col">Date (Friday)</th>
-                        <th scope="col">High</th>
-                        <th scope="col">Low</th>
-                        <th scope="col">Percent</th>
-                        <th scope="col">Сomparison with the previous week</th>
+                        <th scope="col">Дата (Пятница)</th>
+                        <th scope="col">Хай</th>
+                        <th scope="col">Лой</th>
+                        <th scope="col">Процент движения за неделю</th>
+                        <th scope="col">В сравнении с предыдущей неделей</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -91,12 +88,12 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">High</th>
-                            <th scope="col">Low</th>
-                            <th scope="col">Percent</th>
-                            <th scope="col">Day of week</th>
-                            <th scope="col">Сomparison with the previous day</th>
+                            <th scope="col">Дата</th>
+                            <th scope="col">Хай</th>
+                            <th scope="col">Лой</th>
+                            <th scope="col">Процент движения за день</th>
+                            <th scope="col">День недели</th>
+                            <th scope="col">В сравнении с предыдущим днем</th>
                         </tr>
                     </thead>
                     <tbody>
