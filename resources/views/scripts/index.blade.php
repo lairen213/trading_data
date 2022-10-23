@@ -9,15 +9,26 @@
                 <div class="alert alert-success col-12" role="alert">
                     <p>Укажите диапазон дат:</p>
                     <div class="row">
-                        <div class="col-6">
-                            <label for="date_from_inp">От:</label>
+                        <div class="col-4">
+                            <label for="date_from_inp">From:</label>
                             <input id="date_from_inp" class="form-control" type="date" value="{{$date_from}}" name="date_start" />
                         </div>
-                        <div class="col-6">
-                            <label for="date_to_inp">До:</label>
+                        <div class="col-4">
+                            <label for="date_to_inp">To:</label>
                             <input id="date_to_inp" class="form-control" type="date" value="{{$date_to}}" name="date_end"/>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" disabled>
+                                    <option selected>EUR/USD</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelect">Pair:</label>
+                            </div>
                             <br>
-                            <button class="btn btn-info float-end" id="btnStart">Запуск</button>
+                            <button class="btn btn-info float-end" id="btnStart">Run</button>
                         </div>
                     </div>
                 </div>
