@@ -62,62 +62,64 @@
 
         <hr>
 
-        <div class="row">
-            <div class="col-12">
-                <h1>Week info</h1>
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th scope="col">Дата (Пятница)</th>
-                        <th scope="col">Хай</th>
-                        <th scope="col">Лой</th>
-                        <th scope="col">Процент движения за неделю</th>
-                        <th scope="col">В сравнении с предыдущей неделей</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-
-                    @foreach($data_week as $dat)
+        @if($data_week && $data_day)
+            <div class="row">
+                <div class="col-12">
+                    <h1>Week info</h1>
+                    <table class="table table-bordered">
+                        <thead>
                         <tr>
-                            <th scope="row">{{$dat['date']}}</th>
-                            <td>{{$dat['high']}}</td>
-                            <td>{{$dat['low']}}</td>
-                            <td>{{$dat['percent']}}</td>
-                            <td> <span class="badge {{ ($dat['previous_date'] >= 0) ? "bg-success" : "bg-danger" }}">{{$dat['previous_date']}} %</span>  </td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
-            </div>
-            <hr>
-            <div class="col-12">
-                <h1>Day info</h1>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">Дата</th>
+                            <th scope="col">Дата (Пятница)</th>
                             <th scope="col">Хай</th>
                             <th scope="col">Лой</th>
-                            <th scope="col">Процент движения за день</th>
-                            <th scope="col">День недели</th>
-                            <th scope="col">В сравнении с предыдущим днем</th>
+                            <th scope="col">Процент движения за неделю</th>
+                            <th scope="col">В сравнении с предыдущей неделей</th>
                         </tr>
-                    </thead>
-                    <tbody>
-                    @foreach($data_day as $dat)
-                        <tr>
-                            <th scope="row">{{$dat['date']}}</th>
-                            <td>{{$dat['high']}}</td>
-                            <td>{{$dat['low']}}</td>
-                            <td>{{$dat['percent']}}</td>
-                            <td>{{$dat['day_of_week']}}</td>
-                            <td> <span class="badge {{ ($dat['previous_date'] >= 0) ? "bg-success" : "bg-danger" }}">{{$dat['previous_date']}} %</span>  </td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+
+                        @foreach($data_week as $dat)
+                            <tr>
+                                <th scope="row">{{$dat['date']}}</th>
+                                <td>{{$dat['high']}}</td>
+                                <td>{{$dat['low']}}</td>
+                                <td>{{$dat['percent']}}</td>
+                                <td> <span class="badge {{ ($dat['previous_date'] >= 0) ? "bg-success" : "bg-danger" }}">{{$dat['previous_date']}} %</span>  </td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <h1>Day info</h1>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Дата</th>
+                                <th scope="col">Хай</th>
+                                <th scope="col">Лой</th>
+                                <th scope="col">Процент движения за день</th>
+                                <th scope="col">День недели</th>
+                                <th scope="col">В сравнении с предыдущим днем</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($data_day as $dat)
+                            <tr>
+                                <th scope="row">{{$dat['date']}}</th>
+                                <td>{{$dat['high']}}</td>
+                                <td>{{$dat['low']}}</td>
+                                <td>{{$dat['percent']}}</td>
+                                <td>{{$dat['day_of_week']}}</td>
+                                <td> <span class="badge {{ ($dat['previous_date'] >= 0) ? "bg-success" : "bg-danger" }}">{{$dat['previous_date']}} %</span>  </td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
+        @endif
     </div>
 
     <script>
