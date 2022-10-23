@@ -10,12 +10,16 @@
                     <p>Укажите диапазон дат:</p>
                     <div class="row">
                         <div class="col-4">
-                            <label for="date_from_inp">From:</label>
-                            <input id="date_from_inp" class="form-control" type="date" value="{{$date_from}}" name="date_start" />
+                            <div class="form-floating mb-3">
+                                <input type="date" value="{{$date_from}}" class="form-control" name="date_start" id="floatingInput">
+                                <label for="floatingInput">От</label>
+                            </div>
                         </div>
                         <div class="col-4">
-                            <label for="date_to_inp">To:</label>
-                            <input id="date_to_inp" class="form-control" type="date" value="{{$date_to}}" name="date_end"/>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="date" value="{{$date_to}}" name="date_end" id="floatingInput">
+                                <label for="floatingInput">До</label>
+                            </div>
                         </div>
                         <div class="col-4">
                             <div class="form-floating">
@@ -25,10 +29,10 @@
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                                <label for="floatingSelect">Pair:</label>
+                                <label for="floatingSelect">Торговая пара:</label>
                             </div>
                             <br>
-                            <button class="btn btn-info float-end" id="btnStart">Run</button>
+                            <button class="btn btn-info float-end" id="btnStart">Анализ</button>
                         </div>
                     </div>
                 </div>
