@@ -27,10 +27,10 @@
         <!-- Right -->
         <div>
             <a class="me-4" href="https://twitter.com/Seriiioga" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" width="30" height="24">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" width="30" height="30">
             </a>
             <a class="me-4 " href="https://t.me/seriiioga" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="" width="30" height="24">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="" width="30" height="30">
             </a>
         </div>
         <!-- Right -->
