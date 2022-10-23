@@ -141,17 +141,18 @@
             let date_to_inp = $('#date_to_inp').val();
 
             if(date_from_inp < date_to_inp){
-                Swal.fire('Дата ОТ не может быть позже даты ДО')
-            }
+                alert('Дата ОТ не может быть позже даты ДО');
+            }else {
 
-            let url = removeURLParameter(window.location.href, 'date_to');
-            url = removeURLParameter(window.location.href, 'date_from');
-            if (url.indexOf('?') > -1){
-                url += '&date_from='+date_from_inp+'&date_to='+date_to_inp;
-            }else{
-                url += '?date_from='+date_from_inp+'&date_to='+date_to_inp;
+                let url = removeURLParameter(window.location.href, 'date_to');
+                url = removeURLParameter(window.location.href, 'date_from');
+                if (url.indexOf('?') > -1) {
+                    url += '&date_from=' + date_from_inp + '&date_to=' + date_to_inp;
+                } else {
+                    url += '?date_from=' + date_from_inp + '&date_to=' + date_to_inp;
+                }
+                window.location.href = url;
             }
-            window.location.href = url;
         })
     </script>
 @endsection
