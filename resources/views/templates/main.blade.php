@@ -12,18 +12,31 @@
 </head>
 <body>
 
-<nav class="navbar navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand footer-end" href="https://twitter.com/Seriiioga" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" width="30" height="24">
-        </a>
-        <a class="navbar-brand footer-end" href="https://twitter.com/Seriiioga" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" width="30" height="24">
-        </a>
-    </div>
-</nav>
-
 @yield('content')
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a class="me-4 text-reset" href="https://twitter.com/Seriiioga" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" width="30" height="24">
+            </a>
+            <a class="me-4 text-reset" href="https://t.me/seriiioga" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="" width="30" height="24">
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+</footer>
+<!-- Footer -->
 
 </body>
 </html>
