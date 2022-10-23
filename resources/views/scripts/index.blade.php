@@ -11,14 +11,14 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="form-floating mb-3">
-                                <input type="date" value="{{$date_from}}" class="form-control" name="date_start" id="floatingInput">
-                                <label for="floatingInput">От</label>
+                                <input type="date" value="{{$date_from}}" class="form-control" name="date_start" id="date_from_inp">
+                                <label for="date_from_inp">От</label>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="form-floating mb-3">
-                                <input class="form-control" type="date" value="{{$date_to}}" name="date_end" id="floatingInput">
-                                <label for="floatingInput">До</label>
+                                <input class="form-control" type="date" value="{{$date_to}}" name="date_end" id="date_to_inp">
+                                <label for="date_to_inp">До</label>
                             </div>
                         </div>
                         <div class="col-4">
