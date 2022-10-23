@@ -12,6 +12,14 @@
 </head>
 <body>
 
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="https://twitter.com/Seriiioga">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" width="30" height="24">
+        </a>
+    </div>
+</nav>
+
 @yield('content')
 
 </body>
