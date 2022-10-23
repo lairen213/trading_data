@@ -14,7 +14,10 @@
 
 <nav class="navbar navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="https://twitter.com/Seriiioga">
+        <a class="navbar-brand footer-end" href="https://twitter.com/Seriiioga" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" width="30" height="24">
+        </a>
+        <a class="navbar-brand footer-end" href="https://twitter.com/Seriiioga" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="" width="30" height="24">
         </a>
     </div>
