@@ -136,6 +136,7 @@
         }
 
         $('#btnStart').on('click', function(){
+            $(this).prop('disabled', true);
             let date_from_inp = $('#date_from_inp').val();
             let date_to_inp = $('#date_to_inp').val();
 
