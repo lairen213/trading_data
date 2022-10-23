@@ -142,7 +142,7 @@
 
             if(date_from_inp > date_to_inp){
                 swal('Дата ОТ не может быть позже даты ДО');
-                $(this).prop('disabled', true);
+                $(this).prop('disabled', false);
             }else {
 
                 let url = removeURLParameter(window.location.href, 'date_to');
