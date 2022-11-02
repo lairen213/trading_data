@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 offset-4">
+            <div class="col-md-4 col-sm-12 offset-md-4 offset-sm-0">
                 <div class="alert alert-info" role="alert">
                     Средний процент движения за <strong>неделю</strong>: <br>
                     <span style="font-size: 18px;"><strong>{{$avg_percent_week}} %</strong></span>
