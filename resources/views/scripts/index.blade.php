@@ -16,19 +16,19 @@
                 <div class="alert alert-success col-12" role="alert">
                     <p>Укажите диапазон дат:</p>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-md-4 col-sm-12">
                             <div class="form-floating mb-3">
                                 <input type="date" value="{{$date_from}}" class="form-control" name="date_start" id="date_from_inp">
                                 <label for="date_from_inp">От</label>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-sm-12">
                             <div class="form-floating mb-3">
                                 <input class="form-control" type="date" value="{{$date_to}}" name="date_end" id="date_to_inp">
                                 <label for="date_to_inp">До</label>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-sm-12">
                             <div class="form-floating">
                                 <select class="form-select" id="pairSelect" disabled>
                                     <option selected>EUR/USD</option>
@@ -45,14 +45,14 @@
 
 
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 col-sm-12">
                 <div class="alert alert-info" role="alert">
                     Средний процент движения за <strong>день</strong>: <br>
                     <span style="font-size: 18px;"><strong>{{$avg_percent_day}} %</strong></span>
                 </div>
             </div>
 
-            <div class="col-4 offset-4">
+            <div class="col-md-4 col-sm-12 offset-4">
                 <div class="alert alert-info" role="alert">
                     Средний процент движения за <strong>неделю</strong>: <br>
                     <span style="font-size: 18px;"><strong>{{$avg_percent_week}} %</strong></span>
